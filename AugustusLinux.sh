@@ -3,8 +3,8 @@ dpn=("wget" "unzip")
 jdkurl="https://cdn.azul.com/zulu/bin/zulu8.72.0.17-ca-fx-jdk8.0.382-win_x64.zip"
 jdkzip=${jdkurl//"https://cdn.azul.com/zulu/bin/"/}
 jdkfp=${jdkzip//".zip"/}
-wineurl="https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-13/wine-lutris-GE-Proton8-13-x86_64.tar.xz"
-winetar=${wineurl//"https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-13/"}
+wineurl="https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-17/wine-lutris-GE-Proton8-17-x86_64.tar.xz"
+winetar=${wineurl//"https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-17/"}
 winefp=${winetar//"wine-"/}; winefp=${winefp//".tar.xz"/}
 
 echo "Augustus Linux Installer" 
