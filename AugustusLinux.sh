@@ -1,10 +1,21 @@
 #!/bin/bash
+: ' CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+    LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+    HEREUNDER. '
+# Augustus Launcher for Linux
+
+
 dpn=("wget" "unzip")
 jdkurl="https://cdn.azul.com/zulu/bin/zulu8.72.0.17-ca-fx-jdk8.0.382-win_x64.zip"
 jdkzip=${jdkurl//"https://cdn.azul.com/zulu/bin/"/}
 jdkfp=${jdkzip//".zip"/}
-wineurl="https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-13/wine-lutris-GE-Proton8-13-x86_64.tar.xz"
-winetar=${wineurl//"https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-13/"}
+wineurl="https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-17/wine-lutris-GE-Proton8-17-x86_64.tar.xz"
+winetar=${wineurl//"https://github.com/GloriousEggroll/wine-ge-custom/releases/download/GE-Proton8-17/"}
 winefp=${winetar//"wine-"/}; winefp=${winefp//".tar.xz"/}
 
 echo "Augustus Linux Installer" 
