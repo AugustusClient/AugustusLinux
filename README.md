@@ -6,6 +6,7 @@ Augustus for Linux
 * WGet
 * Unzip
 * Tar
+* Bash
 ### Running
 * Clone this repository
 * Run `chmod +x AugustusInstaller.sh`
