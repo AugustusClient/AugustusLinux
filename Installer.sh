@@ -9,8 +9,6 @@
     THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
     HEREUNDER. '
 
-# Augustus Launcher for Linux
-
 dpn=("wget" "unzip" "curl" "jq")
 jdkurl="https://cdn.azul.com/zulu/bin/zulu8.72.0.17-ca-fx-jdk8.0.382-win_x64.zip"
 jdkzip="$(pwd)/$(basename "$jdkurl")"
