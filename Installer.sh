@@ -16,7 +16,7 @@ JDK_DIR="${JDK_ZIP%.zip}"
 
 WINE_URL=$(curl -s -q https://api.github.com/repos/GloriousEggroll/wine-ge-custom/releases/latest | jq -r '.assets[] | select(.name | test("x86_64.tar.xz$")) | .browser_download_url')
 WINE_TAR="$(pwd)/$(basename "$WINE_URL")"
-WINE_DIR="${WINE_TAR%.tar.xz}"
+WINE_DIR="$(echo "$WINE_TAR" | sed 's/wine-//;s/\.tar\.xz$//')"
 
 echo "Augustus Installer"
 sleep 1
