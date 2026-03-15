@@ -1,6 +1,6 @@
 # AugustusLinux
 Augustus for Linux
-## DISCLAIMER: YOU NEED TO OWN AUGUSTUS BEFORE RUNNING THE LAUNCHER! THE INSTALLER DOES *NOT* PROVIDE AUGUSTUS!
+### DISCLAIMER: YOU NEED TO OWN AUGUSTUS BEFORE RUNNING THE LAUNCHER! THE INSTALLER DOES *NOT* PROVIDE AUGUSTUS!
 ## Installation
 ### Dependencies
 * wget
@@ -9,6 +9,8 @@ Augustus for Linux
 * bash
 * curl
 * jq
+
+(these come with most distros)
 ### Running
 * Clone this repository
 * Run `chmod +x Installer.sh`
@@ -21,8 +23,7 @@ Augustus for Linux
 **note: this script won't remove the Wine prefix, you have to do that manually.**
 ## Issues
 ### Reporting a bug
-Please follow the formatting already included in the "Issues" section.
+Please follow the template included in the "Issues" tab.
 ## Contributing
 ### Code format
-Please follow the "suckless" format (src: https://suckless.org/coding_style/) </br>
-Abstractions are not needed, but welcome.
+Please follow [this](https://suckless.org/coding_style/) formatting style.
