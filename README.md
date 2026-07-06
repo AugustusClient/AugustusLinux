@@ -3,7 +3,6 @@ Augustus for Linux
 ### DISCLAIMER: YOU NEED TO OWN AUGUSTUS BEFOREHAND! THE INSTALLER DOES *NOT* PROVIDE AUGUSTUS!
 ## Installation
 ### Dependencies
-* wget
 * unzip
 * tar
 * bash
@@ -11,6 +10,8 @@ Augustus for Linux
 * jq
 
 (these come with most distros)
+
+**Note:** the upstream [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom) project has been archived, so the installer downloads its final release (GE-Proton8-26).
 ### Running
 * Clone this repository
 * Run `chmod +x Installer.sh`

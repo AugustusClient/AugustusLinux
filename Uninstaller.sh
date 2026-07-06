@@ -1,17 +1,28 @@
 #!/bin/bash
 
+set -euo pipefail
+
 WHITELISTED_FILES=("LICENSE" "README.md" "Installer.sh" "Uninstaller.sh")
 
-printf "WARNING! THIS SCRIPT WILL REMOVE ALL FILES FROM THIS DIRECTORY ($(pwd)).\nDO YOU WANT TO PROCEED? [y/n]: "
-read -r warn 
-if [[ ! $warn ]]; then
-  exit 1;
-fi
-warn="${warn,,}"
-if [[ $warn = "y" ]]; then
-  for file in *; do 
-    if [[ ! "${WHITELISTED_FILES[@]}" =~ "$file" ]]; then
-      rm -rf "$file"
-    fi 
-  done
-fi
+printf 'WARNING! THIS SCRIPT WILL REMOVE ALL FILES FROM THIS DIRECTORY (%s).\nDO YOU WANT TO PROCEED? [y/n]: ' "$(pwd)"
+read -r warn
+case "$warn" in
+    [Yy]) ;;
+    *)
+        echo "Aborted."
+        exit 1
+        ;;
+esac
+
+for file in *; do
+    keep=0
+    for whitelisted in "${WHITELISTED_FILES[@]}"; do
+        if [[ "$file" == "$whitelisted" ]]; then
+            keep=1
+            break
+        fi
+    done
+    if [[ $keep -eq 0 ]]; then
+        rm -rf "$file"
+    fi
+done
